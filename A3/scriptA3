@@ -1,0 +1,224 @@
+Script started on 2022-10-20 16:06:40-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="117" LINES="65"]
+bash: alias: -d: not found
+bash: alias: pathname’: not found
+]0;mohammed.hossain1@csa2:~[?2004hmohammed.hossain1@csa2:~$ gdb 355A3
+[?2004l[35;1mGNU gdb (GDB) Fedora 12.1-1.fc36[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m355A3[m...
+[?2004h
+This GDB supports auto-downloading debuginfo from the following URLs:
+https://debuginfod.fedoraproject.org/ 
+Enable debuginfod for this session? (y or [n]) y
+[?2004lDebuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+(No debugging symbols found in [32m355A3[m)
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/uga/mohammed.hossain1/355A3[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+V[0]: 103
+V[1]: 198
+V[2]: 105
+V[3]: 115
+V[4]: 81
+V[5]: 255
+V[6]: 74
+V[7]: 236
+V[8]: 41
+V[9]: 205
+V[10]: 186
+V[11]: 171
+V[12]: 242
+V[13]: 251
+V[14]: 227
+V[15]: 70
+V[16]: 124
+V[17]: 194
+V[18]: 84
+V[19]: 248
+V[20]: 27
+V[21]: 232
+V[22]: 231
+V[23]: 141
+V[24]: 118
+V[25]: 90
+V[26]: 46
+V[27]: 99
+V[28]: 51
+V[29]: 159
+V[30]: 201
+V[31]: 154
+V[32]: 102
+V[33]: 50
+V[34]: 13
+V[35]: 183
+V[36]: 49
+V[37]: 88
+V[38]: 163
+V[39]: 90
+
+Sorted array:
+V[0]: 13
+V[1]: 27
+V[2]: 41
+V[3]: 46
+V[4]: 49
+V[5]: 50
+V[6]: 51
+V[7]: 70
+V[8]: 74
+V[9]: 81
+V[10]: 84
+V[11]: 88
+V[12]: 90
+V[13]: 90
+V[14]: 99
+V[15]: 102
+V[16]: 103
+V[17]: 105
+V[18]: 115
+V[19]: 118
+V[20]: 124
+V[21]: 141
+V[22]: 154
+V[23]: 159
+V[24]: 163
+V[25]: 171
+V[26]: 183
+V[27]: 186
+V[28]: 194
+V[29]: 198
+V[30]: 201
+V[31]: 205
+V[32]: 227
+V[33]: 231
+V[34]: 232
+V[35]: 236
+V[36]: 242
+V[37]: 248
+V[38]: 251
+V[39]: 255
+[Inferior 1 (process 4108396) exited with code 013]
+[?2004h[?2004l[?2004h(gdb) x/100i * main
+[?2004l   [34m0x4006f4[m <[33mmain[m>:	stp	x29, x30, [sp, #-192]!
+   [34m0x4006f8[m <[33mmain[m+4>:	mov	x29, sp
+   [34m0x4006fc[m <[33mloop1[m>:	bl	[34m0x400560[m <[33mrand@plt[m>
+   [34m0x400700[m <[33mloop1[m+4>:	and	w22, w0, #0xff
+   [34m0x400704[m <[33mloop1[m+8>:	ldr	w19, [x29, #16]
+   [34m0x400708[m <[33mloop1[m+12>:	add	x0, x29, #0x1c
+   [34m0x40070c[m <[33mloop1[m+16>:	str	w22, [x0, w19, sxtw #2]
+   [34m0x400710[m <[33mloop1[m+20>:	ldr	x0, [34m0x400810[m <[33mPrint_test[m+24>
+   [34m0x400714[m <[33mloop1[m+24>:	ldr	w1, [x29, #16]
+   [34m0x400718[m <[33mloop1[m+28>:	mov	w2, w22
+   [34m0x40071c[m <[33mloop1[m+32>:	bl	[34m0x400590[m <[33mprintf@plt[m>
+   [34m0x400720[m <[33mloop1[m+36>:	ldr	w19, [x29, #16]
+   [34m0x400724[m <[33mloop1[m+40>:	add	w19, w19, #0x1
+   [34m0x400728[m <[33mloop1[m+44>:	str	w19, [x29, #16]
+   [34m0x40072c[m <[33mtest_loop1[m>:	ldr	w19, [x29, #16]
+   [34m0x400730[m <[33mtest_loop1[m+4>:	cmp	w19, #0x28
+   [34m0x400734[m <[33mtest_loop1[m+8>:	b.lt	[34m0x4006fc[m <[33mloop1[m>  // b.tstop
+   [34m0x400738[m <[33mtest_loop1[m+12>:	mov	w19, #0x27                  	// #39
+   [34m0x40073c[m <[33mtest_loop1[m+16>:	str	w19, [x29, #16]
+   [34m0x400740[m <[33mouterloop[m>:	ldr	w20, [x29, #20]
+   [34m0x400744[m <[33mouterloop[m+4>:	mov	w20, #0x1                   	// #1
+   [34m0x400748[m <[33mouterloop[m+8>:	str	w20, [x29, #20]
+   [34m0x40074c[m <[33mouterloop[m+12>:	bl	[34m0x400794[m <[33minner_test[m>
+   [34m0x400750[m <[33minnerloop[m>:	ldr	w20, [x29, #20]
+   [34m0x400754[m <[33minnerloop[m+4>:	add	x0, x29, #0x1c
+   [34m0x400758[m <[33minnerloop[m+8>:	ldr	w23, [x0, w20, sxtw #2]
+   [34m0x40075c[m <[33minnerloop[m+12>:	ldr	w20, [x29, #20]
+   [34m0x400760[m <[33minnerloop[m+16>:	sub	w24, w20, #0x1
+   [34m0x400764[m <[33minnerloop[m+20>:	ldr	w25, [x0, w24, sxtw #2]
+   [34m0x400768[m <[33minnerloop[m+24>:	cmp	w23, w25
+   [34m0x40076c[m <[33minnerloop[m+28>:	b.ge	[34m0x400788[m <[33mcontinue[m>  // b.tcont
+   [34m0x400770[m <[33minnerloop[m+32>:	ldr	w21, [x29, #24]
+   [34m0x400774[m <[33minnerloop[m+36>:	mov	w21, w25
+   [34m0x400778[m <[33minnerloop[m+40>:	str	w21, [x29, #24]
+   [34m0x40077c[m <[33minnerloop[m+44>:	ldr	w26, [x0, w20, sxtw #2]
+   [34m0x400780[m <[33minnerloop[m+48>:	str	w26, [x0, w24, sxtw #2]
+   [34m0x400784[m <[33minnerloop[m+52>:	str	w21, [x0, w20, sxtw #2]
+   [34m0x400788[m <[33mcontinue[m>:	ldr	w20, [x29, #20]
+   [34m0x40078c[m <[33mcontinue[m+4>:	add	w20, w20, #0x1
+   [34m0x400790[m <[33mcontinue[m+8>:	str	w20, [x29, #20]
+   [34m0x400794[m <[33minner_test[m>:	ldr	w20, [x29, #20]
+   [34m0x400798[m <[33minner_test[m+4>:	ldr	w19, [x29, #16]
+   [34m0x40079c[m <[33minner_test[m+8>:	cmp	w20, w19
+   [34m0x4007a0[m <[33minner_test[m+12>:	b.le	[34m0x400750[m <[33minnerloop[m>
+   [34m0x4007a4[m <[33minner_test[m+16>:	ldr	w19, [x29, #16]
+   [34m0x4007a8[m <[33minner_test[m+20>:	sub	w19, w19, #0x1
+   [34m0x4007ac[m <[33minner_test[m+24>:	str	w19, [x29, #16]
+   [34m0x4007b0[m <[33mouter_test[m>:	ldr	w19, [x29, #16]
+   [34m0x4007b4[m <[33mouter_test[m+4>:	cmp	w19, #0x0
+   [34m0x4007b8[m <[33mouter_test[m+8>:	b.ge	[34m0x400740[m <[33mouterloop[m>  // b.tcont
+   [34m0x4007bc[m <[33mouter_test[m+12>:	ldr	x0, [34m0x400818[m <[33mPrint_test[m+32>
+   [34m0x4007c0[m <[33mouter_test[m+16>:	bl	[34m0x400590[m <[33mprintf@plt[m>
+   [34m0x4007c4[m <[33mouter_test[m+20>:	ldr	w19, [x29, #16]
+   [34m0x4007c8[m <[33mouter_test[m+24>:	mov	w19, #0x0                   	// #0
+   [34m0x4007cc[m <[33mouter_test[m+28>:	str	w19, [x29, #16]
+   [34m0x4007d0[m <[33mprintloop[m>:	ldr	w19, [x29, #16]
+   [34m0x4007d4[m <[33mprintloop[m+4>:	add	x0, x29, #0x1c
+   [34m0x4007d8[m <[33mprintloop[m+8>:	ldr	w28, [x0, w19, sxtw #2]
+   [34m0x4007dc[m <[33mprintloop[m+12>:	ldr	x0, [34m0x400810[m <[33mPrint_test[m+24>
+   [34m0x4007e0[m <[33mprintloop[m+16>:	ldr	w1, [x29, #16]
+   [34m0x4007e4[m <[33mprintloop[m+20>:	mov	w2, w28
+   [34m0x4007e8[m <[33mprintloop[m+24>:	bl	[34m0x400590[m <[33mprintf@plt[m>
+   [34m0x4007ec[m <[33mprintloop[m+28>:	ldr	w19, [x29, #16]
+   [34m0x4007f0[m <[33mprintloop[m+32>:	add	w19, w19, #0x1
+[?2004h--Type <RET> for more, q to quit, c to continue without paging--c
+[?2004l   [34m0x4007f4[m <[33mprintloop[m+36>:	str	w19, [x29, #16]
+   [34m0x4007f8[m <[33mPrint_test[m>:	ldr	w19, [x29, #16]
+   [34m0x4007fc[m <[33mPrint_test[m+4>:	cmp	w19, #0x28
+   [34m0x400800[m <[33mPrint_test[m+8>:	b.lt	[34m0x4007d0[m <[33mprintloop[m>  // b.tstop
+   [34m0x400804[m <[33mPrint_test[m+12>:	ldp	x29, x30, [sp], #192
+   [34m0x400808[m <[33mPrint_test[m+16>:	ret
+   [34m0x40080c[m <[33mPrint_test[m+20>:	udf	#0
+   [34m0x400810[m <[33mPrint_test[m+24>:	.inst	0x004006d8 ; undefined
+   [34m0x400814[m <[33mPrint_test[m+28>:	udf	#0
+   [34m0x400818[m <[33mPrint_test[m+32>:	.inst	0x004006e3 ; undefined
+   [34m0x40081c[m <[33mPrint_test[m+36>:	udf	#0
+   [34m0x400820[m <[33m_fini[m>:	paciasp
+   [34m0x400824[m <[33m_fini[m+4>:	stp	x29, x30, [sp, #-16]!
+   [34m0x400828[m <[33m_fini[m+8>:	mov	x29, sp
+   [34m0x40082c[m <[33m_fini[m+12>:	ldp	x29, x30, [sp], #16
+   [34m0x400830[m <[33m_fini[m+16>:	autiasp
+   [34m0x400834[m <[33m_fini[m+20>:	ret
+   [34m0x400838[m <[33m_IO_stdin_used[m>:	.inst	0x00020001 ; undefined
+   [34m0x40083c[m:	udf	#0
+   [34m0x400840[m:	udf	#0
+   [34m0x400844[m:	udf	#0
+   [34m0x400848[m:	.inst	0x3b031b01 ; undefined
+   [34m0x40084c[m:	udf	#60
+   [34m0x400850[m:	udf	#6
+   [34m0x400854[m:	.inst	0xfffffd78 ; undefined
+   [34m0x400858[m:	udf	#84
+   [34m0x40085c[m:	.inst	0xfffffdb8 ; undefined
+   [34m0x400860[m:	udf	#104
+   [34m0x400864[m:	.inst	0xfffffdd8 ; undefined
+   [34m0x400868[m:	udf	#128
+   [34m0x40086c[m:	.inst	0xfffffe08 ; undefined
+   [34m0x400870[m:	udf	#148
+   [34m0x400874[m:	.inst	0xfffffe48 ; undefined
+   [34m0x400878[m:	udf	#168
+   [34m0x40087c[m:	.inst	0xfffffe88 ; undefined
+   [34m0x400880[m:	udf	#208
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) ni
+[?2004lThe program is not being run.
+[?2004h(gdb) q
+[?2004l]0;mohammed.hossain1@csa2:~[?2004hmohammed.hossain1@csa2:~$ exit
+[?2004lexit
+
+Script done on 2022-10-20 16:07:10-06:00 [COMMAND_EXIT_CODE="0"]

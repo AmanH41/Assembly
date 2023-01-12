@@ -1,0 +1,192 @@
+Script started on 2022-09-27 18:19:29-06:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="117" LINES="65"]
+bash: alias: -d: not found
+bash: alias: pathname’: not found
+]0;mohammed.hossain1@csa1:~[?2004hmohammed.hossain1@csa1:~$ gdb 355A1b
+[?2004l[35;1mGNU gdb (GDB) Fedora 12.1-1.fc36[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m355A1b[m...
+[?2004h
+This GDB supports auto-downloading debuginfo from the following URLs:
+https://debuginfod.fedoraproject.org/ 
+Enable debuginfod for this session? (y or [n]) n
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+(No debugging symbols found in [32m355A1b[m)
+[?2004h(gdb) break main[K[K[K[Kcontinue
+[?2004lBreakpoint 1 at [34m0x400724[m
+[?2004h(gdb) p[Kr
+[?2004lStarting program: [32m/home/uga/mohammed.hossain1/355A1b[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) p $x25
+[?2004l$1 = -10563
+[?2004h(gdb) 
+[?2004l$2 = -10563
+[?2004h(gdb) 
+[?2004l$3 = -10563
+[?2004h(gdb) 
+[?2004l$4 = -10563
+[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) n
+[?2004lProgram not restarted.
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) n
+[?2004lProgram not restarted.
+[?2004h(gdb) s
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: -10563 |x = -10 | y= -10563 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: -2470 |x = -9 | y= -2470 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 2329 |x = -8 | y= 2329 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 4650 |x = -7 | y= 4650 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = -6 | y= 5213 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = -5 | y= 4642 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) p x[K$x25
+[?2004l$5 = 5213
+[?2004h(gdb) s
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = -4 | y= 3465 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) p $x25
+[?2004l$6 = 5213
+[?2004h(gdb) s
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = -3 | y= 2114 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = -2 | y= 925 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = -1 | y= 138 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = 0 | y= -103 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = 1 | y= 250 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = 2 | y= 1149 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = 3 | y= 2450 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = 4 | y= 3913 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5213 |x = 5 | y= 5202 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5885 |x = 6 | y= 5885 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5885 |x = 7 | y= 5434 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5885 |x = 8 | y= 3225 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) p $x25
+[?2004l$7 = 5885
+[?2004h(gdb) s
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5885 |x = 9 | y= -1462 |
+
+Breakpoint 1, [34m0x0000000000400724[m in [33mcontinue[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lSingle stepping until exit from function continue,
+which has no line number information.
+Current max: 5885 |x = 10 | y= -9443 |
+[Inferior 1 (process 2191790) exited with code 047]
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lThe program is not being run.
+[?2004h(gdb) 
+[?2004lThe program is not being run.
+[?2004h(gdb) q
+[?2004l]0;mohammed.hossain1@csa1:~[?2004hmohammed.hossain1@csa1:~$ exit
+[?2004lexit
+
+Script done on 2022-09-27 18:22:31-06:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,346 @@
+Script started on 2022-09-27 18:15:35-06:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="117" LINES="65"]
+bash: alias: -d: not found
+bash: alias: pathname’: not found
+]0;mohammed.hossain1@csa1:~[?2004hmohammed.hossain1@csa1:~$ gdp[Kb 355A1
+[?2004l[35;1mGNU gdb (GDB) Fedora 12.1-1.fc36[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m355A1[m...
+[?2004h
+This GDB supports auto-downloading debuginfo from the following URLs:
+https://debuginfod.fedoraproject.org/ 
+Enable debuginfod for this session? (y or [n]) y
+[?2004lDebuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+(No debugging symbols found in [32m355A1[m)
+[?2004h(gdb) break main
+[?2004lBreakpoint 1 at [34m0x4006c4[m
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/uga/mohammed.hossain1/355A1[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x00000000004006c4[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) display/i $pc
+[?2004l1: x/i $pc
+=> [34m0x4006c4[m <[33mmain[m+8>:	mov	x19, #0xfffffffffffffff6    	// #-10
+[?2004h(gdb) ni
+[?2004l[34m0x00000000004006c8[m in [33mtest[m ()
+1: x/i $pc
+=> [34m0x4006c8[m <[33mtest[m>:	cmp	x19, #0xb
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006cc[m in [33mtest[m ()
+1: x/i $pc
+=> [34m0x4006cc[m <[33mtest[m+4>:	b.eq	[34m0x400740[m <[33mexit[m>  // b.none
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006d0[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006d0[m <[33mmain_body[m>:	mov	x20, #0xffffffffffffff99    	// #-103
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006d4[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006d4[m <[33mmain_body[m+4>:	mov	x21, #0x38                  	// #56
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006d8[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006d8[m <[33mmain_body[m+8>:	mul	x21, x21, x19
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006dc[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006dc[m <[33mmain_body[m+12>:	add	x21, x21, x20
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006e0[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006e0[m <[33mmain_body[m+16>:	mov	x20, #0x12d                 	// #301
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006e4[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006e4[m <[33mmain_body[m+20>:	mul	x23, x19, x19
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006e8[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006e8[m <[33mmain_body[m+24>:	mul	x20, x20, x23
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006ec[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006ec[m <[33mmain_body[m+28>:	add	x20, x20, x21
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006f0[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006f0[m <[33mmain_body[m+32>:	mov	x22, #0xfffffffffffffffc    	// #-4
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006f4[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006f4[m <[33mmain_body[m+36>:	mul	x24, x23, x23
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006f8[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006f8[m <[33mmain_body[m+40>:	mul	x22, x22, x24
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006fc[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x4006fc[m <[33mmain_body[m+44>:	add	x22, x22, x20
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400700[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x400700[m <[33mmain_body[m+48>:	cmp	x25, #0x0
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400704[m in [33mmain_body[m ()
+1: x/i $pc
+=> [34m0x400704[m <[33mmain_body[m+52>:	b.eq	[34m0x40070c[m <[33mif[m>  // b.none
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040070c[m in [33mif[m ()
+1: x/i $pc
+=> [34m0x40070c[m <[33mif[m>:	mov	x25, x22
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400710[m in [33mif[m ()
+1: x/i $pc
+=> [34m0x400710[m <[33mif[m+4>:	b	[34m0x400720[m <[33mcontinue[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400720[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400720[m <[33mcontinue[m>:	adrp	x0, [34m0x400000[m
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400724[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400724[m <[33mcontinue[m+4>:	add	x0, x0, #0x698
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400728[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400728[m <[33mcontinue[m+8>:	mov	x1, x25
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040072c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40072c[m <[33mcontinue[m+12>:	mov	x2, x19
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400730[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400730[m <[33mcontinue[m+16>:	mov	x3, x22
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400734[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400734[m <[33mcontinue[m+20>:	bl	[34m0x400540[m <[33mprintf@plt[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: -10563 |x = -10 | y= -10563 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: -2470 |x = -9 | y= -2470 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 2329 |x = -8 | y= 2329 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) p $x25
+[?2004l$1 = 2329
+[?2004h(gdb) p @x22[K[K[K[K$x22
+[?2004l$2 = 2329
+[?2004h(gdb) 
+[?2004l$3 = 2329
+[?2004h(gdb) ni
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 4650 |x = -7 | y= 4650 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = -6 | y= 5213 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = -5 | y= 4642 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) p @x2[K[K[K$x25
+[?2004l$4 = 5213
+[?2004h(gdb) p $x22
+[?2004l$5 = 4642
+[?2004h(gdb) ni
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = -4 | y= 3465 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = -3 | y= 2114 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = -2 | y= 925 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = -1 | y= 138 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = 0 | y= -103 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = 1 | y= 250 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = 2 | y= 1149 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = 3 | y= 2450 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) p $x22
+[?2004l$6 = 2450
+[?2004h(gdb) p $x25
+[?2004l$7 = 5213
+[?2004h(gdb) ni
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = 4 | y= 3913 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5213 |x = 5 | y= 5202 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5885 |x = 6 | y= 5885 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5885 |x = 7 | y= 5434 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5885 |x = 8 | y= 3225 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5885 |x = 9 | y= -1462 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCurrent max: 5885 |x = 10 | y= -9443 |
+[34m0x0000000000400738[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x400738[m <[33mcontinue[m+24>:	add	x19, x19, #0x1
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040073c[m in [33mcontinue[m ()
+1: x/i $pc
+=> [34m0x40073c[m <[33mcontinue[m+28>:	b	[34m0x4006c8[m <[33mtest[m>
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[Inferior 1 (process 2190397) exited with code 047]
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lThe program is not being run.
+[?2004h(gdb) q
+[?2004l]0;mohammed.hossain1@csa1:~[?2004hmohammed.hossain1@csa1:~$ exit
+[?2004lexit
+
+Script done on 2022-09-27 18:18:16-06:00 [COMMAND_EXIT_CODE="0"]

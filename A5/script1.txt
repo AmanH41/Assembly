@@ -1,0 +1,498 @@
+Script started on 2022-11-24 18:46:19-07:00 [TERM="xterm-256color" TTY="/dev/pts/30" COLUMNS="117" LINES="65"]
+bash: alias: -d: not found
+bash: alias: pathname’: not found
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ make
+[?2004lm4 355A5a.asm > a5a.s
+as a5a.s -o a5a.o
+gcc a5a.o a5aMain.o -o a5a
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ././[K[Ka5a
+[?2004l[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 1
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+1 <-- head of queue <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 2
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+1 <-- head of queue
+2 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 4 3
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+1 <-- head of queue
+2
+3 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 4
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+1 <-- head of queue
+2
+3
+4 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 4 5
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+1 <-- head of queue
+2
+3
+4
+5 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 6
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+1 <-- head of queue
+2
+3
+4
+5
+6 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 7
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+1 <-- head of queue
+2
+3
+4
+5
+6
+7 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 8
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+1 <-- head of queue
+2
+3
+4
+5
+6
+7
+8 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 12121
+
+Queue overflow! Cannot enqueue into a full queue.
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+1 <-- head of queue
+2
+3
+4
+5
+6
+7
+8 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 1
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+2 <-- head of queue
+3
+4
+5
+6
+7
+8 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 2
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+3 <-- head of queue
+4
+5
+6
+7
+8 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 3
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+4 <-- head of queue
+5
+6
+7
+8 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 4
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+5 <-- head of queue
+6
+7
+8 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 5
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+6 <-- head of queue
+7
+8 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 6
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+7 <-- head of queue
+8 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 7
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+8 <-- head of queue <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 8
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Queue underflow! Cannot dequeue from an empty queue.
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Queue underflow! Cannot dequeue from an empty queue.
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 123123
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+123123 <-- head of queue <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 1231233333
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+123123 <-- head of queue
+1231233333 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 22
+
+Press the return key to continue . . . 
+3[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Invalid option! Try again.
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+123123 <-- head of queue
+1231233333
+22 <-- tail of queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 123123
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 1231233333
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 22
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Queue underflow! Cannot dequeue from an empty queue.
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty queue
+
+Press the return key to continue . . . 
+[H[2J[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 4
+
+Terminating program
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ exit
+[?2004lexit
+
+Script done on 2022-11-24 18:47:57-07:00 [COMMAND_EXIT_CODE="0"]

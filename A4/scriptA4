@@ -1,0 +1,355 @@
+Script started on 2022-11-04 15:43:42-06:00 [TERM="xterm-256color" TTY="/dev/pts/97" COLUMNS="117" LINES="65"]
+bash: alias: -d: not found
+bash: alias: pathname’: not found
+]0;mohammed.hossain1@csa2:~[?2004hmohammed.hossain1@csa2:~$ gdb 355A4
+[?2004l[35;1mGNU gdb (GDB) Fedora 12.1-1.fc36[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m355A4[m...
+[?2004h
+This GDB supports auto-downloading debuginfo from the following URLs:
+https://debuginfod.fedoraproject.org/ 
+Enable debuginfod for this session? (y or [n]) n
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+(No debugging symbols found in [32m355A4[m)
+[?2004h(gdb) b mian[K[K[Kain
+[?2004lBreakpoint 1 at [34m0x4008d0[m
+[?2004h(gdb) b gdb1
+[?2004lBreakpoint 2 at [34m0x4008f0[m
+[?2004h(gdb) gd[K[Kb gdb2
+[?2004lBreakpoint 3 at [34m0x400908[m
+[?2004h(gdb) b gdb3
+[?2004lBreakpoint 4 at [34m0x400930[m
+[?2004h(gdb) b gdb4
+[?2004lBreakpoint 5 at [34m0x40094c[m
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/uga/mohammed.hossain1/355A4[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x00000000004008d0[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) x/i $pc
+[?2004l=> [34m0x4008d0[m <[33mmain[m+8>:	ldr	x0, [34m0x400980[m <[33mgdb4[m+56>
+[?2004h(gdb) 
+[?2004l   [34m0x4008d4[m <[33mmain[m+12>:	bl	[34m0x400540[m <[33mprintf@plt[m>
+[?2004h(gdb) 
+[?2004l   [34m0x4008d8[m <[33mmain[m+16>:	add	x8, x29, #0x10
+[?2004h(gdb) 
+[?2004l   [34m0x4008dc[m <[33mmain[m+20>:	bl	[34m0x400730[m <[33mnewCuboid[m>
+[?2004h(gdb) 
+[?2004l   [34m0x4008e0[m <[33mmain[m+24>:	ldr	x0, [34m0x400988[m <[33mgdb4[m+64>
+[?2004h(gdb) 
+[?2004l   [34m0x4008e4[m <[33mmain[m+28>:	add	x3, x29, #0x10
+[?2004h(gdb) 
+[?2004l   [34m0x4008e8[m <[33mmain[m+32>:	bl	[34m0x40081c[m <[33mprintCuboid[m>
+[?2004h(gdb) 
+[?2004l   [34m0x4008ec[m <[33mgdb1[m>:	add	x8, x29, #0x28
+[?2004h(gdb) 
+[?2004l   [34m0x4008f0[m <[33mgdb1[m+4>:	bl	[34m0x400730[m <[33mnewCuboid[m>
+[?2004h(gdb) 
+[?2004l   [34m0x4008f4[m <[33mgdb1[m+8>:	ldr	x0, [34m0x400990[m <[33mgdb4[m+72>
+[?2004h(gdb) 
+[?2004l   [34m0x4008f8[m <[33mgdb1[m+12>:	add	x3, x29, #0x28
+[?2004h(gdb) 
+[?2004l   [34m0x4008fc[m <[33mgdb1[m+16>:	bl	[34m0x40081c[m <[33mprintCuboid[m>
+[?2004h(gdb) 
+[?2004l   [34m0x400900[m <[33mgdb2[m>:	add	x1, x29, #0x10
+[?2004h(gdb) 
+[?2004l   [34m0x400904[m <[33mgdb2[m+4>:	add	x2, x29, #0x28
+[?2004h(gdb) 
+[?2004l   [34m0x400908[m <[33mgdb2[m+8>:	bl	[34m0x40086c[m <[33mequalSize[m>
+[?2004h(gdb) 
+[?2004l   [34m0x40090c[m <[33mgdb2[m+12>:	mov	w19, w0
+[?2004h(gdb) 
+[?2004l   [34m0x400910[m <[33mgdb2[m+16>:	cmp	w19, #0x1
+[?2004h(gdb) 
+[?2004l   [34m0x400914[m <[33mgdb2[m+20>:	b.ne	[34m0x400934[m <[33mcontinue[m>  // b.any
+[?2004h(gdb) 
+[?2004l   [34m0x400918[m <[33mgdb2[m+24>:	add	x3, x29, #0x10
+[?2004h(gdb) 
+[?2004l   [34m0x40091c[m <[33mgdb2[m+28>:	mov	w0, #0x3                   	// #3
+[?2004h(gdb) 
+[?2004l   [34m0x400920[m <[33mgdb2[m+32>:	mov	w2, #0xfffffffa            	// #-6
+[?2004h(gdb) 
+[?2004l   [34m0x400924[m <[33mgdb2[m+36>:	bl	[34m0x4007ac[m <[33mmove[m>
+[?2004h(gdb) 
+[?2004l   [34m0x400928[m <[33mgdb3[m>:	add	x3, x29, #0x28
+[?2004h(gdb) 
+[?2004l   [34m0x40092c[m <[33mgdb3[m+4>:	mov	w0, #0x4                   	// #4
+[?2004h(gdb) 
+[?2004l   [34m0x400930[m <[33mgdb3[m+8>:	bl	[34m0x4007d8[m <[33mscale[m>
+[?2004h(gdb) 
+[?2004l   [34m0x400934[m <[33mcontinue[m>:	ldr	x0, [34m0x400998[m <[33mgdb4[m+80>
+[?2004h(gdb) 
+[?2004l   [34m0x400938[m <[33mcontinue[m+4>:	bl	[34m0x400540[m <[33mprintf@plt[m>
+[?2004h(gdb) 
+[?2004l   [34m0x40093c[m <[33mcontinue[m+8>:	add	x3, x29, #0x10
+[?2004h(gdb) 
+[?2004l   [34m0x400940[m <[33mcontinue[m+12>:	ldr	x0, [34m0x400988[m <[33mgdb4[m+64>
+[?2004h(gdb) 
+[?2004l   [34m0x400944[m <[33mcontinue[m+16>:	bl	[34m0x40081c[m <[33mprintCuboid[m>
+[?2004h(gdb) 
+[?2004l   [34m0x400948[m <[33mgdb4[m>:	add	x3, x29, #0x28
+[?2004h(gdb) 
+[?2004l   [34m0x40094c[m <[33mgdb4[m+4>:	ldr	x0, [34m0x400990[m <[33mgdb4[m+72>
+[?2004h(gdb) 
+[?2004l   [34m0x400950[m <[33mgdb4[m+8>:	bl	[34m0x40081c[m <[33mprintCuboid[m>
+[?2004h(gdb) 
+[?2004l   [34m0x400954[m <[33mgdb4[m+12>:	ldp	x29, x30, [sp], #64
+[?2004h(gdb) 
+[?2004l   [34m0x400958[m <[33mgdb4[m+16>:	mov	w0, #0x0                   	// #0
+[?2004h(gdb) 
+[?2004l   [34m0x40095c[m <[33mgdb4[m+20>:	ret
+[?2004h(gdb) 
+[?2004l   [34m0x400960[m <[33mgdb4[m+24>:	.inst	0x004006d4 ; undefined
+[?2004h(gdb) 
+[?2004l   [34m0x400964[m <[33mgdb4[m+28>:	udf	#0
+[?2004h(gdb) 
+[?2004l   [34m0x400968[m <[33mgdb4[m+32>:	.inst	0x004006f0 ; undefined
+[?2004h(gdb) 
+[?2004l   [34m0x40096c[m <[33mgdb4[m+36>:	udf	#0
+[?2004h(gdb) 
+[?2004l   [34m0x400970[m <[33mgdb4[m+40>:	.inst	0x00400713 ; undefined
+[?2004h(gdb) 
+[?2004l   [34m0x400974[m <[33mgdb4[m+44>:	udf	#0
+[?2004h(gdb) 
+[?2004l   [34m0x400978[m <[33mgdb4[m+48>:	.inst	0x00400721 ; undefined
+[?2004h(gdb) 
+[?2004l   [34m0x40097c[m <[33mgdb4[m+52>:	udf	#0
+[?2004h(gdb) 
+[?2004l   [34m0x400980[m <[33mgdb4[m+56>:	.inst	0x00400698 ; undefined
+[?2004h(gdb) 
+[?2004l   [34m0x400984[m <[33mgdb4[m+60>:	udf	#0
+[?2004h(gdb) 
+[?2004l   [34m0x400988[m <[33mgdb4[m+64>:	.inst	0x004006c7 ; undefined
+[?2004h(gdb) 
+[?2004l   [34m0x40098c[m <[33mgdb4[m+68>:	udf	#0
+[?2004h(gdb) c
+[?2004lContinuing.
+Initial cuboid value:
+Cuboid first origin = (0,0)
+	Base width = 2,Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Breakpoint 2, [34m0x00000000004008f0[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lContinuing.
+Cuboid second origin = (0,0)
+	Base width = 2,Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Breakpoint 3, [34m0x0000000000400908[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lContinuing.
+
+Breakpoint 4, [34m0x0000000000400930[m in [33mgdb3[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lContinuing.
+
+Changed cuboid value:
+Cuboid first origin = (3,-6)
+	Base width = 2,Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Breakpoint 5, [34m0x000000000040094c[m in [33mgdb4[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lContinuing.
+Cuboid second origin = (0,0)
+	Base width = 8,Base length = 8
+	Height = 12
+	Volume = 768
+
+[Inferior 1 (process 1683664) exited normally]
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lThe program is not being run.
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/uga/mohammed.hossain1/355A4[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x00000000004008d0[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008d4[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lInitial cuboid value:
+[34m0x00000000004008d8[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008dc[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008e0[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008e4[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008e8[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCuboid first origin = (0,0)
+	Base width = 2,Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Breakpoint 2, [34m0x00000000004008f0[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008f4[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008f8[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008fc[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCuboid second origin = (0,0)
+	Base width = 2,Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Breakpoint 3, [34m0x0000000000400908[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040090c[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400910[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400914[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400918[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040091c[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400920[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400924[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l
+Breakpoint 4, [34m0x0000000000400930[m in [33mgdb3[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l
+Changed cuboid value:
+Cuboid first origin = (3,-6)
+	Base width = 2,Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Breakpoint 5, [34m0x000000000040094c[m in [33mgdb4[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400950[m in [33mgdb4[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCuboid second origin = (0,0)
+	Base width = 8,Base length = 8
+	Height = 12
+	Volume = 768
+
+[34m0x0000000000400954[m in [33mgdb4[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400958[m in [33mgdb4[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040095c[m in [33mgdb4[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000fffff7e373c8[m in [33m__libc_start_call_main[m () from [32m/lib64/libc.so.6[m
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[Inferior 1 (process 1683824) exited normally]
+[?2004h[?2004l[?2004h(gdb) r
+[?2004lStarting program: [32m/home/uga/mohammed.hossain1/355A4[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x00000000004008d0[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) y
+[?2004lStarting program: [32m/home/uga/mohammed.hossain1/355A4[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x00000000004008d0[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004008d4[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lInitial cuboid value:
+[34m0x00000000004008d8[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008dc[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008e0[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008e4[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008e8[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCuboid first origin = (0,0)
+	Base width = 2,Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Breakpoint 2, [34m0x00000000004008f0[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008f4[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008f8[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004008fc[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lCuboid second origin = (0,0)
+	Base width = 2,Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Breakpoint 3, [34m0x0000000000400908[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040090c[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) x/100ud $x20
+[?2004l[34m0x1[m:	Cannot access memory at address 0x1
+[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) n
+[?2004lProgram not restarted.
+[?2004h(gdb) c
+[?2004lContinuing.
+
+Breakpoint 4, [34m0x0000000000400930[m in [33mgdb3[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lContinuing.
+
+Changed cuboid value:
+Cuboid first origin = (3,-6)
+	Base width = 2,Base length = 2
+	Height = 3
+	Volume = 12
+
+
+Breakpoint 5, [34m0x000000000040094c[m in [33mgdb4[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lContinuing.
+Cuboid second origin = (0,0)
+	Base width = 8,Base length = 8
+	Height = 12
+	Volume = 768
+
+[Inferior 1 (process 1683971) exited normally]
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lThe program is not being run.
+[?2004h(gdb) q
+[?2004l]0;mohammed.hossain1@csa2:~[?2004hmohammed.hossain1@csa2:~$ exit
+[?2004lexit
+
+Script done on 2022-11-04 15:46:05-06:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,40 @@
+Script started on 2022-11-25 02:55:52-07:00 [TERM="xterm-256color" TTY="/dev/pts/21" COLUMNS="132" LINES="118"]
+bash: alias: -d: not found
+bash: alias: pathname’: not found
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ exit./a5b 01 31
+[?2004lJanuary 31st is Winter
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 01 31[K[K21
+[?2004lJanuary 21st is Winter
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 01 21[K[K01\
+[?2004l[?2004h> 
+[?2004lJanuary 1st is Winter
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 01 01\[C[C[K[K[K[K[K[K12 21
+[?2004lDecember 21st is Winter
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 12 21[K0
+[?2004lDecember 20th is Fall
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 12 20[1P 20[1P 200 201 20[1P 203 20[C[C[C
+[?2004lMarch 20th is Winter
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 03 20[K1
+[?2004lMarch 21st is Spring
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 03 21[1P 216 21
+[?2004lJune 21st is Summer
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 06 21[K0
+[?2004lJune 20th is Spring
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 06 20[1P 209 20
+[?2004lSeptember 20th is Summer
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 09 20[K1
+[?2004lSeptember 21st is Fall
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 09 21[K[K1
+[?2004lSeptember 1st is Summer
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 09 1[K21
+[?2004lSeptember 21st is Fall
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 09 21[K[K11
+[?2004lSeptember 11th is Summer
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 09 11[K[K31
+[?2004lusage: a5b mm dd
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ ./a5b 09 31[1P 31[1P 310 311 31[1P 31[1P 310 313 31
+[?2004lMarch 31st is Spring
+]0;mohammed.hossain1@csa3:~[?2004hmohammed.hossain1@csa3:~$ exit
+[?2004lexit
+
+Script done on 2022-11-25 02:57:53-07:00 [COMMAND_EXIT_CODE="0"]

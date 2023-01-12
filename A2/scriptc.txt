@@ -1,0 +1,127 @@
+Script started on 2022-10-06 01:32:11-06:00 [TERM="xterm-256color" TTY="/dev/pts/14" COLUMNS="117" LINES="65"]
+bash: alias: -d: not found
+bash: alias: pathname’: not found
+]0;mohammed.hossain1@csa2:~[?2004hmohammed.hossain1@csa2:~$ gdb 355A2c
+[?2004l[35;1mGNU gdb (GDB) Fedora 12.1-1.fc36[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m355A2c[m...
+[?2004h
+This GDB supports auto-downloading debuginfo from the following URLs:
+https://debuginfod.fedoraproject.org/ 
+Enable debuginfod for this session? (y or [n]) n
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+(No debugging symbols found in [32m355A2c[m)
+[?2004h(gdb) b main
+[?2004lBreakpoint 1 at [34m0x4006c4[m
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/uga/mohammed.hossain1/355A2c[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x00000000004006c4[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004006c8[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006cc[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006d0[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006d4[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006d8[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) p/x $w20
+[?2004l$1 = 0x1
+[?2004h(gdb) p/t $w20
+[?2004l$2 = 1
+[?2004h(gdb) ni
+[?2004l[34m0x00000000004006dc[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006e0[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006e4[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006e8[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006ec[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006f0[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006f4[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x00000000004006f8[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) nip/t $w20x[C[C[C[C[C
+[?2004l$3 = 0x8ff08ff
+[?2004h(gdb) p/x $w20[C[C[C[C[C[Cni[Kp/t $w20
+[?2004l$4 = 1000111111110000100011111111
+[?2004h(gdb) ni
+[?2004l[34m0x00000000004006fc[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400700[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400704[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400708[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040070c[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400710[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400714[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) nip/t $w20x[C[C[C[C[C
+[?2004l$5 = 0x80ff80ff
+[?2004h(gdb) p/x $w20[C[C[C[C[C[Cni[Kp/t $w20
+[?2004l$6 = 10000000111111111000000011111111
+[?2004h(gdb) ni
+[?2004l[34m0x0000000000400718[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x000000000040071c[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400720[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400724[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400728[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) nip/t $w20x[C[C[C[C[C
+[?2004l$7 = 0xff80ff80
+[?2004h(gdb) p/x $w20[C[C[C[C[C[Cni[Kp/t $w20
+[?2004l$8 = 11111111100000001111111110000000
+[?2004h(gdb) ni
+[?2004l[34m0x000000000040072c[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400730[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000000000400734[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004loriginal: 0x01FF01FF reversed: 0xFF80FF80
+[34m0x0000000000400738[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) nip/t $w20x[C[C[C[C[C
+[?2004l$9 = 0xff80ff80
+[?2004h(gdb) p/x $w20[C[C[C[C[C[Cni[Kp/t $w20
+[?2004l$10 = 11111111100000001111111110000000
+[?2004h(gdb) ni
+[?2004l[34m0x000000000040073c[m in [33mmain[m ()
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[34m0x0000fffff7e373c8[m in [33m__libc_start_call_main[m () from [32m/lib64/libc.so.6[m
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[Inferior 1 (process 2929954) exited with code 052]
+[?2004h[?2004l[?2004h(gdb) 
+[?2004lThe program is not being run.
+[?2004h(gdb) q
+[?2004l]0;mohammed.hossain1@csa2:~[?2004hmohammed.hossain1@csa2:~$ exiut[K[Kt
+[?2004lexit
+
+Script done on 2022-10-06 01:33:29-06:00 [COMMAND_EXIT_CODE="0"]
